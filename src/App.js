@@ -1,5 +1,5 @@
 import React , {useState , useEffect} from 'react';
-import {commerce } from './lib/commerce';
+import { commerce } from './lib/commerce.js';
 import {Products , Navbar} from './components';
 
 const App = () => {
