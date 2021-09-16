@@ -4,7 +4,12 @@ import { AppBar, ToolBar , IconButton , Badge , MenuItem , Menu , Typography } f
 import { CallMissedSharp, ShoppingCart } from '@material-ui/icons';
 import { mergeClasses } from '@material-ui/styles';
 
+import logo from '../../assets/Apple.webp'
+import useStyles from './styles'
+
 const Navbar = () => {
+    const classes = useStyles();
+
     return (
         <>
           <AppBar position="fixed" className={classes.appBar} color= 'inherit'>
@@ -13,6 +18,14 @@ const Navbar = () => {
                     <img src={} alt="Nome da Loja" height="25px" className={classes.image}/>
                     Nome da Loja
                 </Typography>
+                <div className={classes.grow}/>
+                <div className={classes.button}>
+                    <IconButton aria-label="Show Cart Items" color="inherit">
+                        <Badge badgeContent={2} color="secondary">
+                            <ShoppingCart />
+                        </Badge>
+                    </IconButton>
+                </div>
             </ToolBar>
          </AppBar>  
         </>
