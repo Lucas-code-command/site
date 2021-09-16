@@ -8,7 +8,10 @@ import useStyles from './styles';
 const Product = ({ product }) => {
     const classes = useStyles();
 
-    
+    console.log(product);
+
+    return<div>Teste</div>
+
     return (
         <Card className= {classes.root}>
             <CardMedia className={classes.media} image={product.image} title={product.name}/>
